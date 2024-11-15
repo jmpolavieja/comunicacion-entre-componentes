@@ -14,7 +14,7 @@ export class PadreComponent {
   }
   datoPadre = 'Ejemplo de dato que viene del padre';
 
-  recibidoDelHijo() {
-    alert('EL hijo me ha enviado su evento');
+  recibidoDelHijo(mensaje: string) {
+    alert(mensaje);
   }
 }

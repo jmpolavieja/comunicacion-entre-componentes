@@ -10,9 +10,9 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class HijoComponent {
 
   @Input() datoHijo: string = 'Vacío';
-  @Output() meHanHechoClick = new EventEmitter<void>();
+  @Output() meHanHechoClick = new EventEmitter<string>();
 
   disparaElEvento() {
-    this.meHanHechoClick.emit();
+    this.meHanHechoClick.emit('Hola Papá!');
   }
 }
